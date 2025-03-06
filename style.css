@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    font-family:"Walter Turncoat", cursive;
+    background-color: rgba(57, 55, 55, 0.928);
+    font-size:large;
+}
+.links{
+    margin-left: 300px;
+    
+}
+.links a{
+    
+    color: white;
+    text-decoration: none;
+}
+.info{
+    margin-left: 300px;
+}
+.S1{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(239, 234, 234);
+    padding: 3px;
+    font-family: "Permanent Marker", cursive;
+}
+.logo{
+    padding: 10px;
+    display: flex;
+    margin-left: 200px;
+}
+.logo img{
+    border-radius: 20%;
+}
+.logo p{
+    padding: 30px;
+    font-family: "Anton", sans-serif;
+    
+}
+.sidebar li {
+    margin-right: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-flex;
+}
+.sidebar ul{
+    padding-top: 5%;
+}
+.sidebar a{
+    color:black;
+    text-decoration: none;
+}
+.S2{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:rgb(62, 61, 61) ;
+    text-align: center;
+
+}
+.box{
+    /* transition: opacity 0.7s ease,transform 0.7s ease; */
+    opacity: 1;
+    margin: 10%;
+    border-radius: 2em;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    width:18em;
+    color: rgb(5, 5, 5);
+    background-color: rgb(176, 176, 77);
+}
+.box button{
+    text-align: center;
+    width: 100%;
+    padding:1em;
+    background-color: seagreen;
+    border: none;
+    font-size: medium;
+    
+}
+.S2:has(.box:hover) .box{
+    opacity: 0.5;
+}
+.S2:has(.box:hover) .box:hover{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    transition:all 1s ease-in-out;
+}
+
+.S3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    text-align: center;
+}
+.S3 .table{
+    
+    padding: .5em;
+    margin: 5em;
+    display: inline-block;
+    flex-direction: column;
+
+}
+ 
+.table img{
+    border-radius: 5%;
+}
+.col{
+    
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+
+}
+
+.row{
+    font-size: large;
+    text-align: start;
+    padding: 1em;
+}
+.row button{
+    margin:.8em;
+    /* text-align: center; */
+    width: 40%;
+    padding: .5em;
+}
+.S4{
+    padding-top: 2%;
+    background-color: rgb(203, 203, 201);
+    text-align: center;
+}
+
+.two{
+    padding: 2% 5% 4% 15% ;
+    display: flex;
+    flex-direction: row;
+    /* gap:2%; */
+    
+} 
+.item{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.itemli{
+    background-color: cadetblue;
+    /* border-style: solid; */
+    color: white;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    width:40%;
+    padding: 2%;
+    justify-content: space-around;
+}
+.itemli button{
+    width:60%;
+    text-align: center;
+    padding: 3%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding: 5% ;
+    background-color: rgb(65, 64, 64);
+    color: rgb(255, 255, 255);
+}
+.foot1{
+    justify-content: space-around;
+    flex-basis: 30%;
+}
+.subfoot1{
+    justify-content: space-between;
+    padding-bottom: 5% ;
+}
+
+
+.subfoot2 li{
+    padding: 2%;
+    display: flex;
+}
+.subfoot2 a{
+    
+    text-decoration: none;
+    color: white;
+}
+.subfoot2 input{
+    padding: 2%;
+    background-color: rgb(65, 64, 64);
+    border-color: dimgrey;
+    color: white;
+}
+.subfoot2 button{
+    margin:4%;
+    padding: 3%;
+}
+.socialmedia ul{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.socialmedia{
+    border-color: rgb(57, 57, 57);
+    border-style: solid;
+    background-color: rgb(74, 73, 73);
+    justify-content: center;
+
+}
+.footer2{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 1%;
+}
