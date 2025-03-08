@@ -14,9 +14,7 @@
     background-color: rgba(57, 55, 55, 0.928);
     font-size:large;
 }
-.info{
-    display: inline-flex;
-}
+
 .links a{
     color: white;
     text-decoration: none;
