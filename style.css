@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
     padding: 0;
     
@@ -6,84 +6,77 @@
 
 .navbar {
     color: white;
-    padding: 10px;
-    justify-content: space-between;
+    padding: 1%;
+    justify-content: space-around;
     display: flex;
+    flex-direction: row;
     font-family:"Walter Turncoat", cursive;
     background-color: rgba(57, 55, 55, 0.928);
     font-size:large;
 }
-.links{
-    margin-left: 300px;
-    
-}
+
 .links a{
-    
     color: white;
     text-decoration: none;
 }
-.info{
-    margin-left: 300px;
-}
+
 .S1{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: rgb(239, 234, 234);
     padding: 3px;
     font-family: "Permanent Marker", cursive;
 }
 .logo{
-    padding: 10px;
     display: flex;
-    margin-left: 200px;
 }
 .logo img{
     border-radius: 20%;
 }
 .logo p{
-    padding: 30px;
     font-family: "Anton", sans-serif;
     
 }
-.sidebar li {
-    margin-right: 20px;
-    font-weight: bolder;
-    text-decoration: none;
+.sidebar li{
     display: inline-flex;
 }
-.sidebar ul{
-    padding-top: 5%;
-}
+
 .sidebar a{
+    font-weight: bolder;
     color:black;
     text-decoration: none;
 }
 .S2{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color:rgb(62, 61, 61) ;
-    text-align: center;
 
 }
 .box{
     /* transition: opacity 0.7s ease,transform 0.7s ease; */
     opacity: 1;
-    margin: 10%;
-    border-radius: 2em;
-    border-width: 2px;
+    border-radius: 2%;
     display: flex;
+    margin: 6%;
     flex-direction: column;
+    justify-content: space-between;
     border-style: solid;
-    width:18em;
+    width: 15%;
+    height: 15%;
     color: rgb(5, 5, 5);
     background-color: rgb(176, 176, 77);
 }
-.box button{
-    text-align: center;
+.box img{
+    height: 100%;
     width: 100%;
-    padding:1em;
+}
+.box button{
+    padding:3%;
     background-color: seagreen;
     border: none;
+    width: 100%;
     font-size: medium;
     
 }
@@ -97,79 +90,97 @@
 }
 
 .S3{
+    padding: 3%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3%;
 }
-.S3 .table{
-    
-    padding: .5em;
-    margin: 5em;
-    display: inline-block;
-    flex-direction: column;
-
-}
- 
-.table img{
+.S3 img{
     border-radius: 5%;
 }
-.col{
-    
+.table1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cols{
+    /* padding: 2%; */
     display: flex;
-    margin: 1em;
-    justify-content: center;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 3%;
 
 }
 
 .row{
+    flex-direction: column;
     font-size: large;
-    text-align: start;
-    padding: 1em;
+    /* justify-content: space-between; */
+
 }
 .row button{
-    margin:.8em;
-    /* text-align: center; */
-    width: 40%;
-    padding: .5em;
+    padding: 2%;
+    color: rgb(19, 18, 18);
+    border-style: solid;
+    align-content: center;
+    background-color: azure;
+    width: 30%;
+}
+hr{
+    border-color: rgb(41, 40, 40);
+    border-style: solid;
+    width: 90%;
 }
 .S4{
-    padding-top: 2%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(203, 203, 201);
-    text-align: center;
 }
 
 .two{
-    padding: 2% 5% 4% 15% ;
+    padding: 2%;
     display: flex;
     flex-direction: row;
-    /* gap:2%; */
+    justify-content: space-between;
+    gap: 10%;
+
     
 } 
 .item{
-    width: 40%;
     display: flex;
     flex-direction: row;
 }
 .itemli{
     background-color: cadetblue;
-    /* border-style: solid; */
     color: white;
     display: flex;
-    text-align: justify;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
-    width:40%;
     padding: 2%;
     justify-content: space-around;
 }
 .itemli button{
-    width:60%;
-    text-align: center;
+    border-style: solid;
+    width: 50%;
     padding: 3%;
+    border-color: black;
+
+
 }
 .footer{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3%;
     justify-content: center;
     gap: 5%;
     padding: 5% ;
@@ -181,14 +192,16 @@
     flex-basis: 30%;
 }
 .subfoot1{
-    justify-content: space-between;
-    padding-bottom: 5% ;
+    /* justify-content: space-between; */
+    padding-bottom: 3% ;
+    /* align-items: center; */
 }
 
 
 .subfoot2 li{
-    padding: 2%;
+    padding: .5%;
     display: flex;
+
 }
 .subfoot2 a{
     
@@ -202,20 +215,20 @@
     color: white;
 }
 .subfoot2 button{
-    margin:4%;
+    /* margin:4%; */
     padding: 3%;
 }
 .socialmedia ul{
     padding: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 .socialmedia{
     border-color: rgb(57, 57, 57);
     border-style: solid;
     background-color: rgb(74, 73, 73);
-    justify-content: center;
+    justify-content: space-between;
 
 }
 .footer2{
@@ -224,4 +237,65 @@
     color: white;
     justify-content: center;
     padding: 1%;
+}
+@media screen and (max-width:640px)
+{
+    *{
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar,.S1,.S2,.row,.S4,.footer,.item,.sidebar,.socialmedia,.two,.cols,.row,.table,.box,.foot1{
+        flex-direction: column; 
+        font-size: small;
+        justify-content: center;
+
+    }
+    .cols img{
+        height: 60%;
+        width: 60%;
+    }
+    .table1 img,.box{
+        height: 30%;
+        width: 60%;
+    }
+    .table2 {
+        height: 100%;
+        width: 100%;
+
+    }
+    .cols{
+        justify-content: space-around;
+    }
+    .row{
+        width: 90%;
+    }
+    .row button,.subfoot2 button{
+        
+        font-size: small;
+        padding: 1%;
+    }
+    .S3{
+        grid-template-columns: 1fr;
+
+    }
+    .two{
+        gap:5%;
+        justify-content: space-between;
+    }
+    .foot1,.footcol{
+        padding: 2%;
+    }
+    .foot1 li{
+        justify-content: left;
+        
+    }
+    
+    h1,h2{
+        font-size: x-large;
+    }
+    .socialmedia ul,.subfoot2 input{
+        padding: 0%;
+    }
+    
 }
