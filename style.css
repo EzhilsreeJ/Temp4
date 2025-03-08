@@ -231,6 +231,9 @@ hr{
     justify-content: space-between;
 
 }
+.footcol{
+    padding: 2%;
+}
 .footer2{
     display: flex;
     background-color: black;
