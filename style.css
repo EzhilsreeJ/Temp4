@@ -114,7 +114,7 @@
     display: flex;
     flex-direction: row; 
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 3%;
 
 }
@@ -248,7 +248,7 @@ hr{
         justify-content: center;
         align-items: center;
     }
-    .navbar,.S1,.S2,.row,.S4,.footer,.item,.sidebar,.socialmedia,.two,.table,.box,.foot1{
+    .navbar,.S1,.S2,.row,.S4,.footer,.item,.sidebar,.socialmedia,.two,.box,.foot1{
         flex-direction: column; 
         font-size: small;
         justify-content: center;
@@ -262,14 +262,12 @@ hr{
         height: 30%;
         width: 60%;
     }
-    /* .table2 {
+    .table2 {
+        gap: 0%;
         height: 100%;
         width: 100%;
-
-    } */
-    .cols{
-        height: auto;
     }
+    
     .row{
         justify-content: center;
         width: 100%;
@@ -279,9 +277,11 @@ hr{
         
         font-size: small;
         padding: 1%;
+        width: fit-content;
     }
     .S3{
         grid-template-columns: 1fr;
+        gap: 0%;
 
     }
     .two{
@@ -301,6 +301,7 @@ hr{
     }
     .socialmedia ul,.subfoot2 input{
         padding: 0%;
+        gap: 0%;
     }
     
 }
