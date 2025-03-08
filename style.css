@@ -1,4 +1,5 @@
-    *{
+*{
+    
     margin: 0;
     padding: 0;
     
@@ -180,7 +181,6 @@ hr{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 3%;
     justify-content: center;
-    gap: 5%;
     padding: 5% ;
     background-color: rgb(65, 64, 64);
     color: rgb(255, 255, 255);
@@ -276,7 +276,7 @@ hr{
         padding: 1%;
         width: fit-content;
     }
-    .S3{
+    .S3,.footer{
         grid-template-columns: 1fr;
         gap: 0%;
 
